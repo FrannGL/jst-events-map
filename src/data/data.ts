@@ -295,8 +295,276 @@ export const accidentes = [
   {
     modo: "maritimo",
     tipo: "incidente",
-    coordenadas: [-51.6236, -69.2166], // Puerto Deseado
+    coordenadas: [-51.6236, -69.2166],
     titulo: "Problemas mecánicos en embarcación",
     descripcion: "Una embarcación solicitó asistencia por fallos técnicos.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-38.9516, -68.0591], // Neuquén Capital
+    titulo: "Colisión en Av. Argentina",
+    descripcion: "Dos vehículos colisionaron en hora pico, sin heridos graves.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-38.9376, -68.0739], // Ruta 22, cerca de Neuquén
+    titulo: "Vuelco por exceso de velocidad",
+    descripcion: "Conductor perdió el control en curva pronunciada.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente",
+    coordenadas: [-38.9351, -69.2308], // Cutral Có
+    titulo: "Vehículo detenido por falla técnica",
+    descripcion: "Interrupción momentánea del tránsito en rotonda principal.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "accidente",
+    coordenadas: [-38.9067, -68.0824], // Estación Neuquén
+    titulo: "Formación chocó con vehículo en paso a nivel",
+    descripcion: "Daños materiales, sin víctimas.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente",
+    coordenadas: [-38.9043, -70.0652], // Zapala
+    titulo: "Demora por inspección en vagón",
+    descripcion: "Revisión preventiva de carga por sospecha de fuga.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-24.7859, -65.4117], // Salta Capital
+    titulo: "Colisión múltiple en avenida principal",
+    descripcion: "Tres vehículos involucrados, un herido leve.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-26.8083, -65.2176], // San Miguel de Tucumán
+    titulo: "Choque con motocicleta",
+    descripcion: "Grave incidente en intersección sin semáforo.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente",
+    coordenadas: [-27.7951, -64.2615], // Santiago del Estero
+    titulo: "Auto detenido en banquina",
+    descripcion: "Falla mecánica, sin interrupción del tránsito.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "accidente",
+    coordenadas: [-24.1893, -65.2974], // Perico, Jujuy
+    titulo: "Descarrilamiento parcial",
+    descripcion: "Vagón salió de las vías, sin heridos.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente",
+    coordenadas: [-27.5287, -66.1336], // Andalgalá, Catamarca (ficticio)
+    titulo: "Demora por revisión técnica",
+    descripcion: "Parada no programada por inspección del sistema de frenos.",
+  },
+  {
+    modo: "aeronautico",
+    tipo: "incidente",
+    coordenadas: [-24.8551, -65.4865], // Aeropuerto Internacional Martín Miguel de Güemes (Salta)
+    titulo: "Aterrizaje demorado por viento cruzado",
+    descripcion: "Condiciones meteorológicas adversas.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-36.6208, -64.2902], // Santa Rosa
+    titulo: "Colisión en zona urbana",
+    descripcion: "Dos autos involucrados, sin heridos graves.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-38.9875, -65.1157], // Cercanías de Casa de Piedra
+    titulo: "Vuelco en ruta provincial",
+    descripcion: "Un herido trasladado al hospital más cercano.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente",
+    coordenadas: [-36.4333, -64.9833], // General Pico
+    titulo: "Parada no programada por mantenimiento",
+    descripcion: "El servicio se reanudó tras 30 minutos.",
+  },
+  {
+    modo: "maritimo",
+    tipo: "incidente",
+    coordenadas: [-38.6454, -65.0947], // Dique Casa de Piedra
+    titulo: "Embarcación con motor averiado",
+    descripcion: "Rescate sin complicaciones por prefectura.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-32.8908, -68.8272], // Ciudad de Mendoza
+    titulo: "Choque en cruce semaforizado",
+    descripcion: "Vehículos con daños leves, sin heridos.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-33.0591, -68.4936], // Luján de Cuyo
+    titulo: "Camioneta embistió ciclista",
+    descripcion: "Ciclista internado con lesiones moderadas.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente grave",
+    coordenadas: [-32.8872, -68.8169], // Estación Mendoza
+    titulo: "Fallo en sistema eléctrico",
+    descripcion: "Tren detenido durante 45 minutos, sin evacuación.",
+  },
+  {
+    modo: "aeronautico",
+    tipo: "incidente",
+    coordenadas: [-32.8312, -68.7922], // Aeropuerto El Plumerillo
+    titulo: "Demora por inspección técnica",
+    descripcion: "Chequeo preventivo de tren de aterrizaje.",
+  },
+
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-43.2519, -65.3097], // Trelew
+    titulo: "Colisión múltiple en avenida principal",
+    descripcion: "Tres vehículos involucrados, dos heridos leves.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente grave",
+    coordenadas: [-43.2976, -65.1023], // Puerto Madryn
+    titulo: "Descarrilamiento parcial en zona portuaria",
+    descripcion: "Sin víctimas, se investigan las causas.",
+  },
+  {
+    modo: "aeronautico",
+    tipo: "incidente",
+    coordenadas: [-43.2094, -65.2701], // Aeropuerto de Trelew
+    titulo: "Retraso por alerta técnica en pista",
+    descripcion: "Demora de 1 hora por inspección de seguridad.",
+  },
+  {
+    modo: "maritimo",
+    tipo: "incidente grave",
+    coordenadas: [-44.0486, -65.6995], // Camarones
+    titulo: "Barco pesquero sufrió ingreso de agua",
+    descripcion: "Tripulación evacuada a tiempo, sin heridos.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-51.6236, -69.2166], // Río Gallegos
+    titulo: "Vuelco en Ruta Nacional 3",
+    descripcion: "Conductor trasladado con politraumatismos.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-50.0194, -68.5792], // Puerto Deseado
+    titulo: "Choque en cruce urbano",
+    descripcion: "Daños materiales y un herido leve.",
+  },
+  {
+    modo: "aeronautico",
+    tipo: "incidente",
+    coordenadas: [-50.2803, -72.0536], // Aeropuerto El Calafate
+    titulo: "Desvío por condiciones climáticas",
+    descripcion: "Vuelo redirigido por fuertes vientos.",
+  },
+  {
+    modo: "maritimo",
+    tipo: "incidente",
+    coordenadas: [-47.7528, -65.9023], // Puerto San Julián
+    titulo: "Embarcación recreativa sin control",
+    descripcion: "Remolcada sin incidentes por guardacostas.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-70.9333, -46.5833], // Ruta entre Perito Moreno y Río Mayo
+    titulo: "Despiste en curva cerrada",
+    descripcion: "Vehículo perdió el control por escarcha. Sin heridos.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-70.7642, -45.6853], // Cercanías de Río Mayo
+    titulo: "Colisión por cruce de guanaco",
+    descripcion: "Daños materiales y lesiones leves en conductor.",
+  },
+  {
+    modo: "aeronautico",
+    tipo: "incidente",
+    coordenadas: [-70.9258, -46.5241], // Aeródromo de Perito Moreno
+    titulo: "Problemas en tren de aterrizaje",
+    descripcion: "Aterrizaje de emergencia sin víctimas.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente",
+    coordenadas: [-70.8715, -46.3609], // Trazado ferroviario abandonado
+    titulo: "Obstrucción en antiguo paso ferroviario",
+    descripcion: "Registro de incidente en paso en desuso.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente",
+    coordenadas: [-70.8161, -46.0013], // Ruta 40 en cercanías
+    titulo: "Vehículo encajado por nieve",
+    descripcion: "Asistencia vial requerida, sin consecuencias.",
+  },
+  {
+    modo: "automotor",
+    tipo: "accidente",
+    coordenadas: [-34.6037, -58.3816], // CABA - Microcentro
+    titulo: "Choque en Av. Corrientes y 9 de Julio",
+    descripcion:
+      "Colisión entre dos vehículos, tráfico interrumpido por 30 minutos.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente grave",
+    coordenadas: [-34.6158, -58.445], // CABA - Villa Lugano
+    titulo: "Vuelco en autopista Dellepiane",
+    descripcion: "Chofer trasladado con heridas moderadas.",
+  },
+  {
+    modo: "ferroviario",
+    tipo: "incidente",
+    coordenadas: [-34.6441, -58.4096], // Estación Constitución
+    titulo: "Retraso por mantenimiento en vías",
+    descripcion: "Servicio interrumpido durante 1 hora.",
+  },
+  {
+    modo: "aeronautico",
+    tipo: "incidente",
+    coordenadas: [-34.5595, -58.4157], // Aeroparque Jorge Newbery
+    titulo: "Demora por inspección de seguridad",
+    descripcion: "Vuelo postergado por revisión técnica.",
+  },
+  {
+    modo: "maritimo",
+    tipo: "incidente",
+    coordenadas: [-34.6545, -58.3739], // Puerto Madero - Río de la Plata
+    titulo: "Barco recreativo con problema en motor",
+    descripcion: "Asistencia brindada sin incidentes mayores.",
+  },
+  {
+    modo: "automotor",
+    tipo: "incidente",
+    coordenadas: [-34.6097, -58.3802], // CABA - San Telmo
+    titulo: "Vehículo detenido por corte de calle",
+    descripcion: "Manifestación causó interrupción temporal del tránsito.",
   },
 ];
