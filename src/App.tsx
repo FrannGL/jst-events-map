@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CustomMap } from "./components/custom/App";
+import { CustomMap } from "./components/custom/CustomMap";
 import { Topbar } from "./components/custom/Topbar";
 
 export default function App() {
