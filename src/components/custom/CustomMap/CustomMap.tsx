@@ -70,25 +70,46 @@ export const CustomMap = ({ filterModos }: { filterModos?: string[] }) => {
         latitude: -36.0,
         zoom: 3.5,
       }}
-      mapStyle="mapbox://styles/franngl/cmd6f41w800fx01sa08p4d6an"
+      mapStyle="mapbox://styles/mapbox/satellite-streets-v12"
       ref={mapRef}
-      onLoad={() => setMapReady(true)}
+      onLoad={() => {
+        setMapReady(true);
+        const map = mapRef.current?.getMap();
+
+        if (map && !map.getTerrain()) {
+          map.setTerrain({ source: "mapbox-dem", exaggeration: 1.5 });
+
+          map.setLight({
+            anchor: "viewport",
+            intensity: 0.6,
+          });
+        }
+      }}
       onClick={handleClick}
       onMouseMove={handleMouseMove}
     >
       {mapReady && (
-        <Source
-          id="accidents"
-          type="geojson"
-          data={geojson}
-          cluster={true}
-          clusterMaxZoom={14}
-          clusterRadius={50}
-        >
-          <Layer {...clusterLayer} />
-          <Layer {...clusterCountLayer} />
-          <Layer {...unclusteredPointLayer} />
-        </Source>
+        <>
+          <Source
+            id="mapbox-dem"
+            type="raster-dem"
+            url="mapbox://mapbox.terrain-rgb"
+            tileSize={512}
+            maxzoom={14}
+          />
+          <Source
+            id="accidents"
+            type="geojson"
+            data={geojson}
+            cluster={true}
+            clusterMaxZoom={14}
+            clusterRadius={50}
+          >
+            <Layer {...clusterLayer} />
+            <Layer {...clusterCountLayer} />
+            <Layer {...unclusteredPointLayer} />
+          </Source>
+        </>
       )}
 
       {selectedAccident && (
